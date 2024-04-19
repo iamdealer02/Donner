@@ -3,6 +3,7 @@ import Svg, { Path } from 'react-native-svg'
 import { StatusBar } from 'expo-status-bar'
 import React, {useState} from 'react'
 import {GEOAPIFY_API_KEY, GEOAPIFY_BASE_URL} from '@env'
+import Navbar from '../components/navbar'
 
 
 export default function WelcomeScreen() {
@@ -98,8 +99,12 @@ export default function WelcomeScreen() {
 
 
       <StatusBar style="auto" />
+      <View >
+        <Navbar />
+      </View>
 
     </View>
+    
   )
 }
 
